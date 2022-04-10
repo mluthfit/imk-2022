@@ -25,13 +25,13 @@ public class Movement : MonoBehaviour
 
     private void OnEnable()
     {
-        //Cursor.lockState = CursorLockMode.Locked;
+        Cursor.lockState = CursorLockMode.Locked;
         _controls.Enable();
     }
 
     private void OnDisable()
     {
-        //Cursor.lockState = CursorLockMode.None;
+        Cursor.lockState = CursorLockMode.None;
         _controls.Disable();
     }
 
